@@ -22,7 +22,6 @@ public class FnolExtractor {
         if (form != null) {
             for (PDField field : form.getFieldTree()) {
                 map.put(field.getFullyQualifiedName(), field.getValueAsString());
-                System.out.println(field.getFullyQualifiedName() + "    =   " + field.getValueAsString());
             }
         }
         return map;
